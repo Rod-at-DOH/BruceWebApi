@@ -11,7 +11,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.UseSwaggerUI(options => {
-        options.SwaggerEndpoint("openapi/v1/openapi.json", "v1"); // Set the Swagger endpoint 
+        options.SwaggerEndpoint("openapi/v1.json", "v1"); // Set the Swagger endpoint 
         options.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
     });
 }
